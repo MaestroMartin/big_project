@@ -35,7 +35,7 @@ class MainWindow(QMainWindow):
 
     def get_temperature(self):
         try:
-            response = requests.get('http://192.168.0.106:5000/temperature')
+            response = requests.get('http://192.168.0.116:5000/temperature')
             data = response.json()
 
             if 'error' in data:
